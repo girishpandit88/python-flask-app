@@ -4,6 +4,7 @@ Given instance id gets the connection string for that instance.
 
 Usage: 
 ``` /instances/<instance-id> [GET]```
+
 Response: 
 ```
 {
@@ -12,8 +13,10 @@ Response:
 ```
 
 Given a tag, gets all instances connection string, comma separated, that are associated with that instance.
+
 Usage: 
 ```/tags?tag=<tagname> [GET]```
+
 Response:
 ```
 {
