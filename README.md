@@ -1,5 +1,9 @@
 A standalone python flask app. 
 
+To run this app locally, 
+
+```python flaskexample.py```
+
 Given instance id gets the connection string for that instance.
 
 Usage: 
