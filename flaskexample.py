@@ -4,11 +4,11 @@
 from flask import Flask, jsonify, request
 import boto.ec2
 import json
-import awsfabrictasks.ec2.api as awsfab
+
 
 app = Flask(__name__)
 
-ec2=boto.ec2.connect_to_region('us-east-1',aws_access_key_id='<aws_access_key_id>',aws_secret_access_key='<aws_secret_access_key')
+ec2=boto.ec2.connect_to_region('us-east-1')
 
 #given an instance id give connection string associated with it
 @app.route("/instances/<instanceid>")
@@ -68,5 +68,5 @@ def getUserForAMIId(ami_id):
 		return 'ec2-user'
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
