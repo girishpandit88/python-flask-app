@@ -14,11 +14,11 @@ Response:
 {
 	instanceid: [
 				{
-					connectionString: "ssh -i tnt-auth-prod.pem ec2-user@54.227.77.235",
-					instanceId: "i-90020b6a",
+					connectionString: "ssh -i KEYNAME.pem ec2-user@55.255.255.255",
+					instanceId: "i-abcdefgh",
 					launchTime: "2015-03-20T16:30:49.000Z",
-					loadBalancer: "",
-					privateIP: "10.109.145.44",
+					loadBalancer: "app.elasticbeanstalk.com",
+					privateIP: "10.10.10.0",
 					status: "running"
 				}
 			]
@@ -35,11 +35,11 @@ Response:
 {
 	tagname: [
 				{
-					connectionString: "ssh -i tnt-auth-prod.pem ec2-user@54.227.77.235",
-					instanceId: "i-90020b6a",
+					connectionString: "ssh -i KEYNAME.pem ec2-user@55.255.255.255",
+					instanceId: "i-abcdefgh",
 					launchTime: "2015-03-20T16:30:49.000Z",
-					loadBalancer: "",
-					privateIP: "10.109.145.44",
+					loadBalancer: "app.elasticbeanstalk.com",
+					privateIP: "10.10.10.0",
 					status: "running"
 				}
 			]
