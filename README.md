@@ -12,7 +12,16 @@ Usage:
 Response: 
 ```
 {
-	connectionString: "ssh -i {key-pair} {user}@{ip_address}"
+	instanceid: [
+				{
+					connectionString: "ssh -i tnt-auth-prod.pem ec2-user@54.227.77.235",
+					instanceId: "i-90020b6a",
+					launchTime: "2015-03-20T16:30:49.000Z",
+					loadBalancer: "",
+					privateIP: "10.109.145.44",
+					status: "running"
+				}
+			]
 }
 ```
 
@@ -24,6 +33,15 @@ Usage:
 Response:
 ```
 {
-	connectionString: "ssh -i {key-pair} {user}@{ip_address}, ssh -i {key-pair} {user}@{ip_address}"	
+	tagname: [
+				{
+					connectionString: "ssh -i tnt-auth-prod.pem ec2-user@54.227.77.235",
+					instanceId: "i-90020b6a",
+					launchTime: "2015-03-20T16:30:49.000Z",
+					loadBalancer: "",
+					privateIP: "10.109.145.44",
+					status: "running"
+				}
+			]
 }
 ```
